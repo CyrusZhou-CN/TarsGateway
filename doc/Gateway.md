@@ -450,3 +450,9 @@ TARS-tup & TARS-JSON 协议代理请求响应日志格式说明：
 **Http access 日志：**
 
 客户端 ip | 访问时间 | host | referer | 请求 url | 请求包大小 | http 方法 | 站点 ID | 后端地址 | http 返回状态码 | 响应时间 | 耗时(ms) | 响应包大小 | UA | 出错信息
+
+### 12. 其他说明
+
+- 要支持跨域请求, 请参考httpheader.conf中的options配置
+- 为了安全, 建议GatewayServer.conf中的auto_proxy配置为0, 即不通过主控发现代理, 而是直接使用配置文件中的代理配置
+- 如果要支持https, 需要先将tarscpp启用ssl编译, 然后配置GatewayServer的模板, 配置好证书, 请参考tarscpp启用ssl文档.

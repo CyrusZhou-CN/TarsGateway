@@ -293,3 +293,9 @@ General HTTP protocol proxy log format description:
 **Http access log:**
 
 Client ip | access time | host | referer | request url | request packet size | http method | site ID | backend address | http return status code | response time | time (ms) | response packet size | UA | error message
+
+## 11. Other notes
+
+- To support cross-domain requests, please refer to the options configuration in httpheader.conf
+- For security, it is recommended to configure auto_proxy=0 in GatewayServer.conf, that is, not to discover proxies through the master control, but to directly use the proxy configuration in the configuration file
+- If you want to support https, you need to compile tarscpp with ssl enabled first, then configure the template of GatewayServer, configure the certificate, please refer to the tarscpp enable ssl document.
