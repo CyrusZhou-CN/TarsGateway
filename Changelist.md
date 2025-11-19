@@ -1,14 +1,48 @@
+## v1.3.3 (20230717)
+
+### en
+
+- verify support proxy config servant
+- merge pr， fix decrypt+decode bug
+
+### cn
+
+- 认证支持proxy配置中根据servant别名配置verify信息
+- 合并 pr，解决 body 加解密问题
+
+## v1.3.2 (20220823)
+
+### en
+
+- use -static-gcc -static-libstdc++
+### cn
+
+- 默认使用-static-gcc -static-libstdc++, 静态编译, 以适配不同GCC的OS
+
+## v1.3.1 (20220718)
+
+### en
+
+- Fix the web platform k8s parameter error
+- Fix GatewayServer _terminate not init bug
+### cn
+
+- 修复web平台k8s参数错误
+- 修复GatewayServer _terminate 未初始化的bug
+
 ## v1.3.0 (20220207)
 
 ### en
 
 - use base-compiler-stretch
 - support tarscloud market
+- Gateway web platform independence
 
 ### cn
 
 - actions 使用 stretch 来编译
 - 支持 tarscloud 服务市场
+- 网关web平台独立 
 
 ## v1.2.1
 
